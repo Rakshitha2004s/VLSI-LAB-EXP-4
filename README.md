@@ -188,37 +188,39 @@ endmodule
 
 OUTPUT WAVEFORM
 
-SR FLIPFLOP
+ # SR FLIPFLOP
+```
 
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/34ee2d3d-776c-498e-b4d5-4cb17ceb0d2e)
-
-JK FLIPFLOP
-
+```
+# JK FLIPFLOP
+```
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/40201b1f-a39c-48b5-9196-8a39c3613419)
-
-T FLIPFLOP
-
+```
+# T FLIPFLOP
+```
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/3c71bcdd-a23d-4bca-b081-ff9c11621337)
-
-D FLIPFLOP
-
+```
+# D FLIPFLOP
+```
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/396c0e95-bd11-4066-ba4c-e9ac86c865cb)
-
-COUNTERS
-
-UPDOWN COUNTER
-
+```
+# COUNTERS
+```
+```
+# UPDOWN COUNTER
+```
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/5433378c-0fc8-4a8f-8906-96e511db2047)
-
-MOD 10 COUNTER
-
+```
+# MOD 10 COUNTER
+```
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/e5271770-280a-43c6-8d8b-1168ffea2b0d)
-
-RIPLLE COUNTER
-
+```
+# RIPLLE COUNTER
+```
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/766a7309-7909-4e43-b055-7c607a982c24)
+```
 
-
-RESULT
+# RESULT
 
 Hence SR, JK, T, D - FLIPFLOP, COUNTER DESIGN are simulated and synthesised using Xilinx ISE.
