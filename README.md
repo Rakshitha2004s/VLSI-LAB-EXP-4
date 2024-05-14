@@ -9,33 +9,7 @@ APPARATUS REQUIRED:
 Xilinx 14.7
 Spartan6 FPGA
 
-**LOGIC DIAGRAM**
 
-SR FLIPFLOP
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/77fb7f38-5649-4778-a987-8468df9ea3c3)
-
-
-JK FLIPFLOP
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/1510e030-4ddc-42b1-88ce-d00f6f0dc7e6)
-
-T FLIPFLOP
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/7a020379-efb1-4104-85ee-439d660baa08)
-
-
-D FLIPFLOP
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/dda843c5-f0a0-4b51-93a2-eaa4b7fa8aa0)
-
-
-COUNTER
-
-![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/a1fc5f68-aafb-49a1-93d2-779529f525fa)
-
-
-  
 PROCEDURE:
 STEP:1  Start  the Xilinx navigator, Select and Name the New project.
 
@@ -59,9 +33,13 @@ STEP:10 Double click on the Implement Design and double click on the Generate Pr
 
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
+
+LOGIC DIAGRAM OF SR FLIPFLOP
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/77fb7f38-5649-4778-a987-8468df9ea3c3)
+
 VERILOG CODE
-# SR FLIPFLOP
-```
+
 module srff(s,r,clk,rst,q);
 input s,r,clk,rst;
 output reg q;
@@ -80,9 +58,18 @@ endcase
 end
 end
 endmodule
-```
-# JK FLIPFLOP
-```
+
+OUTPUT
+
+![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/34ee2d3d-776c-498e-b4d5-4cb17ceb0d2e)
+
+
+LOGIC DIAGRAM OF JK FLIPFLOP
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/1510e030-4ddc-42b1-88ce-d00f6f0dc7e6)
+
+VERILOG CODE
+
 module jkff(j,k,clk,rst,q);
 input j,k,clk,rst;
 output reg q;
@@ -101,9 +88,18 @@ endcase
 end
 end
 endmodule
-```
-# T FLIPFLOP
-```
+
+OUTPUT
+
+![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/40201b1f-a39c-48b5-9196-8a39c3613419)
+
+
+T FLIPFLOP
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/7a020379-efb1-4104-85ee-439d660baa08)
+
+VERILOG CODE
+
 module tff(clk,rst,t,q);
 input clk,rst,t;
 output reg q;
@@ -117,9 +113,18 @@ else
 q=~q;
 end
 endmodule
-```
-# D FLIPFLOP
-```
+
+OUTPUT
+
+![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/3c71bcdd-a23d-4bca-b081-ff9c11621337)
+
+
+D FLIPFLOP
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/dda843c5-f0a0-4b51-93a2-eaa4b7fa8aa0)
+
+VERILOG CODE
+
 module dff(d,clk,rst,q);
 input d,clk,rst;
 output reg q;
@@ -131,27 +136,43 @@ else
 q=d;
 end
 endmodule
-```
-# COUNTERS
 
-# UPDOWN COUNTER
-```
-module updown(clk,rst,updown,out);
-input clk,rst,updown;
-output reg [3:0]out;
-always@(posedge clk)
+OUTPUT
+
+![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/396c0e95-bd11-4066-ba4c-e9ac86c865cb)
+
+
+LOGIC DIAGRAM OF COUNTER
+
+![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/a1fc5f68-aafb-49a1-93d2-779529f525fa)
+
+UPDOWN COUNTER
+
+VERILOG CODE
+
+
+module dff(d,clk,rst,q);
+input d,clk,rst;
+output reg q;
+always @(posedge clk)
 begin
 if (rst==1)
-out=4'b0000;
-else if(updown==1)
-out=out+1;
+q=1'b0;
 else
-out=out-1;
+q=d;
 end
 endmodule
-```
-# MOD 10 COUNTER
-```
+
+  
+OUTPUT
+
+![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/066078ce-f1d6-4726-a59a-1eac1edfbe43)
+
+
+ MOD 10 COUNTER
+
+VERILOG CODE
+
 module mod10(clk,rst,out);
 input clk,rst;
 output reg [3:0]out;
@@ -163,9 +184,17 @@ else
 out=out+1;
 end
 endmodule
-```
-# RIPPLE COUNTER
-```
+
+OUTPUT
+
+![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/e5271770-280a-43c6-8d8b-1168ffea2b0d)
+
+
+RIPPLE COUNTER
+
+VERILOG CODE
+
+
 module tff(q,clk,rst);
 input clk,rst;
 output q;
@@ -194,40 +223,12 @@ tff tf1(q[0],clk,rst);
 tff tf3(q[2],q[1],rst);
 tff tf4(q[3],q[2],rst);
 endmodule
-```
-
-OUTPUT WAVEFORM
-
-SR FLIPFLOP
-
-![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/34ee2d3d-776c-498e-b4d5-4cb17ceb0d2e)
-
-JK FLIPFLOP
-
-![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/40201b1f-a39c-48b5-9196-8a39c3613419)
-
-T FLIPFLOP
-
-![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/3c71bcdd-a23d-4bca-b081-ff9c11621337)
-
-D FLIPFLOP
-
-![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/396c0e95-bd11-4066-ba4c-e9ac86c865cb)
-
-COUNTERS
 
 
-UPDOWN COUNTER
-
-![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/5433378c-0fc8-4a8f-8906-96e511db2047)
-
-MOD 10 COUNTER
-
-![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/e5271770-280a-43c6-8d8b-1168ffea2b0d)
-
-RIPLLE COUNTER
+OUTPUT
 
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/766a7309-7909-4e43-b055-7c607a982c24)
+
 
 
 RESULT
