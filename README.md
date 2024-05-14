@@ -40,42 +40,26 @@ LOGIC DIAGRAM OF SR FLIPFLOP
 
 VERILOG CODE
 
+```
 module srff(s,r,clk,rst,q);
-
 input s,r,clk,rst;
-
 output reg q;
-
 always@(posedge clk)
-
 begin
-
 if(rst==1)
-
 q=0;
-
 else
-
 begin
-
 case({s,r})
-
 2'b00:q=q;
-
 2'b01:q=0;
-
 2'b10:q=1;
-
 2'b11:q=1'bX;
-
 endcase
-
 end
-
 end
-
 endmodule
-
+```
 
 OUTPUT
 
@@ -88,42 +72,26 @@ LOGIC DIAGRAM OF JK FLIPFLOP
 
 VERILOG CODE
 
+```
 module jkff(j,k,clk,rst,q);
-
 input j,k,clk,rst;
-
 output reg q;
-
 always@(posedge clk)
-
 begin
-
 if(rst==1)
-
 q=0;
-
 else
-
 begin
-
 case({j,k})
-
 2'b00:q=q;
-
 2'b01:q=0;
-
 2'b10:q=1;
-
 2'b11:q=~q;
-
 endcase
-
 end
-
 end
-
 endmodule
-
+```
 
 OUTPUT
 
@@ -136,32 +104,21 @@ T FLIPFLOP
 
 VERILOG CODE
 
+```
 module tff(clk,rst,t,q);
-
 input clk,rst,t;
-
 output reg q;
-
 always @(posedge clk)
-
 begin
-
 if (rst==1)
-
 q=1'b0;
-
 else if (t==0)
-
 q=q;
-
 else
-
 q=~q;
-
 end
-
 endmodule
-
+```
 
 OUTPUT
 
@@ -174,28 +131,19 @@ D FLIPFLOP
 
 VERILOG CODE
 
+```
 module dff(d,clk,rst,q);
-
 input d,clk,rst;
-
 output reg q;
-
 always @(posedge clk)
-
 begin
-
 if (rst==1)
-
 q=1'b0;
-
 else
-
 q=d;
-
 end
-
 endmodule
-
+```
 
 OUTPUT
 
@@ -211,60 +159,42 @@ UPDOWN COUNTER
 
 VERILOG CODE
 
+```
 module dff(d,clk,rst,q);
-
 input d,clk,rst;
-
 output reg q;
-
 always @(posedge clk)
-
 begin
-
 if (rst==1)
-
 q=1'b0;
-
 else
-
 q=d;
-
 end
-
 endmodule
-
+```
   
 OUTPUT
 
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/066078ce-f1d6-4726-a59a-1eac1edfbe43)
 
 
- MOD 10 COUNTER
+MOD 10 COUNTER
 
 VERILOG CODE
 
+```
 module mod10(clk,rst,out);
-
 input clk,rst;
-
 output reg [3:0]out;
-
 always@(posedge clk)
-
 begin
-
 if (rst==1 | out==4'b1001)
-
 out=4'b0000;
-
 else
-
 out=out+1;
-
 end
-
 endmodule
-
+```
 
 OUTPUT
 
