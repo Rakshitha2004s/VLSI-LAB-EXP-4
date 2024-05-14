@@ -38,6 +38,7 @@ LOGIC DIAGRAM OF SR FLIPFLOP
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/77fb7f38-5649-4778-a987-8468df9ea3c3)
 
+
 VERILOG CODE
 
 ```
@@ -61,14 +62,17 @@ end
 endmodule
 ```
 
+
 OUTPUT
 
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/34ee2d3d-776c-498e-b4d5-4cb17ceb0d2e)
 
 
-LOGIC DIAGRAM OF JK FLIPFLOP
+
+JK FLIPFLOP
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/1510e030-4ddc-42b1-88ce-d00f6f0dc7e6)
+
 
 VERILOG CODE
 
@@ -93,14 +97,17 @@ end
 endmodule
 ```
 
+
 OUTPUT
 
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/40201b1f-a39c-48b5-9196-8a39c3613419)
 
 
+
 T FLIPFLOP
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/7a020379-efb1-4104-85ee-439d660baa08)
+
 
 VERILOG CODE
 
@@ -120,14 +127,17 @@ end
 endmodule
 ```
 
+
 OUTPUT
 
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/3c71bcdd-a23d-4bca-b081-ff9c11621337)
 
 
+
 D FLIPFLOP
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/dda843c5-f0a0-4b51-93a2-eaa4b7fa8aa0)
+
 
 VERILOG CODE
 
@@ -145,14 +155,17 @@ end
 endmodule
 ```
 
+
 OUTPUT
 
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/396c0e95-bd11-4066-ba4c-e9ac86c865cb)
 
 
-LOGIC DIAGRAM OF COUNTER
+
+COUNTERS
 
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-4/assets/6987778/a1fc5f68-aafb-49a1-93d2-779529f525fa)
+
 
 
 UPDOWN COUNTER
@@ -172,10 +185,12 @@ q=d;
 end
 endmodule
 ```
+
   
 OUTPUT
 
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/066078ce-f1d6-4726-a59a-1eac1edfbe43)
+
 
 
 MOD 10 COUNTER
@@ -196,9 +211,11 @@ end
 endmodule
 ```
 
+
 OUTPUT
 
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/e5271770-280a-43c6-8d8b-1168ffea2b0d)
+
 
 
 RIPPLE COUNTER
@@ -236,9 +253,11 @@ tff tf4(q[3],q[2],rst);
 endmodule
 ```
 
+
 OUTPUT
 
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/766a7309-7909-4e43-b055-7c607a982c24)
+
 
 
 
