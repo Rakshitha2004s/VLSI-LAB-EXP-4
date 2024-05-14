@@ -275,7 +275,7 @@ RIPPLE COUNTER
 
 VERILOG CODE
 
-
+```
 module tff(q,clk,rst);
 input clk,rst;
 output q;
@@ -304,7 +304,7 @@ tff tf1(q[0],clk,rst);
 tff tf3(q[2],q[1],rst);
 tff tf4(q[3],q[2],rst);
 endmodule
-
+```
 
 OUTPUT
 
