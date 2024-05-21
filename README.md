@@ -211,7 +211,6 @@ OUTPUT
 RIPPLE COUNTER
 
 VERILOG CODE
-
 ```
 module tff(q,clk,rst);
 input clk,rst;
@@ -232,6 +231,9 @@ else
 q=d;
 end
 endmodule
+
+
+
 
 
 
