@@ -202,8 +202,8 @@ end
 endmodule
 ```
 
-
 OUTPUT
+
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/e5271770-280a-43c6-8d8b-1168ffea2b0d)
 
 
