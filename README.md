@@ -208,7 +208,6 @@ OUTPUT
 ![image](https://github.com/Rakshitha2004s/VLSI-LAB-EXP-4/assets/161333609/e5271770-280a-43c6-8d8b-1168ffea2b0d)
 
 
-
 RIPPLE COUNTER
 
 VERILOG CODE
@@ -221,7 +220,6 @@ wire d;
 dff df1(q,d,clk,rst);
 not n1(d,q);
 endmodule
-
 module dff(q,d,clk,rst);
 input d,clk,rst;
 output q;
@@ -234,6 +232,10 @@ else
 q=d;
 end
 endmodule
+
+
+
+
 
 module ripplecounter(clk,rst,q);
 input clk,rst;
